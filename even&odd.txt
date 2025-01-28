@@ -1,0 +1,10 @@
+let arr = [1, 2, 4, 5, 6, 7, 9];
+const even = [];
+const odd = [];
+
+arr.filter((item) => {
+    return (item % 2 === 0) ? even.push(item) : odd.push(item);
+});
+
+console.log("Even:", even); // [2, 4, 6]
+console.log("Odd:", odd);   // [1, 5, 7, 9]

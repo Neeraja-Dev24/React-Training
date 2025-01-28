@@ -1,0 +1,23 @@
+const cities = ["Pune", "Ahmedabad", "Rajkot", "Mumbai", "Delhi", "Kanpur","kolkata"];
+
+const groupAndReverseCities = (arr) => {
+  const reversed = arr.reverse();
+  const grouped = [];
+
+  for (let i = 0, groupSize = 1; i < reversed.length; groupSize++) {
+    grouped.push(reversed.slice(i, i + groupSize));
+    i += groupSize;
+  }
+
+  return grouped;
+};
+
+console.log(groupAndReverseCities(cities);
+);
+
+//output -[
+  [ 'kolkata' ],
+  [ 'Kanpur', 'Delhi' ],
+  [ 'Mumbai', 'Rajkot', 'Ahmedabad' ],
+  [ 'Pune' ]
+]
