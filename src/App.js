@@ -4,13 +4,15 @@ import CountdownTimer from './CountdownTimer/countdownTimer';
 import Counter from './Counter/counter';
 import Parent from './Greetings/parent';
 import TemperatureControl from './TempratureController/TempratureController';
+import Todo from './Todo/Todo';
 function App() {
   return (
     <div className="App">
       <Counter/>
-      <CountdownTimer/>
+      <Todo/>
+      {/* <CountdownTimer/>
       <Parent/>
-      <TemperatureControl/>
+      <TemperatureControl/> */}
       {/* <Controller/> */}
     </div>
   );
